@@ -86,7 +86,7 @@ public class SqlLiteDBMovieTitleWriter implements MovieTitleWriter{
                 new StatementParameter(1, movie.id(), NVARCHAR),
                 new StatementParameter(2, movie.title(), NVARCHAR),
                 new StatementParameter(3, movie.year() != -1 ? movie.year() : null, INTEGER),
-                new StatementParameter(3, movie.duration() != -1 ? movie.duration() : null, INTEGER)
+                new StatementParameter(4, movie.duration() != -1 ? movie.duration() : null, INTEGER)
         );
     }
 
